@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stam="http://facturacion.finkok.com/stamp">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <stam:stamp>
+            <!--Optional:-->
+            <stam:xml>{{xml}}</stam:xml>
+            <!--Optional:-->
+            <stam:username>{{username}}</stam:username>
+            <!--Optional:-->
+            <stam:password>{{password}}</stam:password>
+        </stam:stamp>
+    </soapenv:Body>
+</soapenv:Envelope>

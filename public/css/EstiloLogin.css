@@ -1,0 +1,315 @@
+    .button.is-primary {
+        background: #0caeeb !important;
+        color: #fff;
+        border: 1px solid #0caeeb !important;
+    }
+
+    .is-text-brand1 {
+        color: #00aaea !important;
+    }
+
+    #hs-feedback-ui {
+        animation-duration: 0.4s;
+        animation-timing-function: ease-out;
+        display: none;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        z-index: 2147483647;
+        max-width: 100%;
+    }
+
+    .hubspot.space-sword #hs-feedback-ui {
+        z-index: 1070;
+    }
+
+    #hs-feedback-ui.hs-feedback-shown {
+        display: block;
+    }
+
+    #hs-feedback-fetcher {
+        position: fixed;
+        left: 1000%;
+    }
+
+
+    @keyframes feedback-slide-in-hs-feedback-left {
+        from {
+            transform: translate(0, 100%);
+        }
+
+        to {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes feedback-slide-out-hs-feedback-left {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(0, 100%);
+        }
+    }
+
+    #hs-feedback-ui.hs-feedback-left {
+        animation-name: feedback-slide-in-hs-feedback-left;
+    }
+
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-slid-out {
+        animation-name: feedback-slide-out-hs-feedback-left;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes feedback-slide-in-hs-feedback-right {
+        from {
+            transform: translate(0, 100%);
+        }
+
+        to {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes feedback-slide-out-hs-feedback-right {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(0, 100%);
+        }
+    }
+
+    #hs-feedback-ui.hs-feedback-right {
+        animation-name: feedback-slide-in-hs-feedback-right;
+    }
+
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-slid-out {
+        animation-name: feedback-slide-out-hs-feedback-right;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes feedback-slide-in-hs-feedback-top {
+        from {
+            transform: translate(0, -100%);
+        }
+
+        to {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes feedback-slide-out-hs-feedback-top {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(0, -100%);
+        }
+    }
+
+    #hs-feedback-ui.hs-feedback-top {
+        animation-name: feedback-slide-in-hs-feedback-top;
+    }
+
+    #hs-feedback-ui.hs-feedback-top.hs-feedback-slid-out {
+        animation-name: feedback-slide-out-hs-feedback-top;
+        animation-fill-mode: forwards;
+    }
+
+
+    #hs-feedback-ui>iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    #hs-feedback-ui:not(.hs-feedback-top) {
+        bottom: 0;
+    }
+
+    #hs-feedback-ui.hs-feedback-left {
+        left: 0;
+    }
+
+    #hs-feedback-ui.hs-feedback-right {
+        right: 0;
+    }
+
+    .zorse #hs-feedback-ui:not(.hs-feedback-top) {
+        bottom: 6px;
+    }
+
+    .zorse #hs-feedback-ui.hs-feedback-right {
+        right: 0;
+    }
+
+    #hs-feedback-ui.hs-feedback-top {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    #hs-feedback-ui.hs-feedback-nps:not(.hs-feedback-top) {
+        width: 480px;
+    }
+
+    #hs-feedback-ui.hs-feedback-csat:not(.hs-feedback-top) {
+        width: 350px;
+    }
+
+    #hs-feedback-ui.hs-feedback-csat.hs-feedback-extended-width:not(.hs-feedback-top) {
+        width: 550px;
+    }
+
+    @media only screen and (min-width: 544px) {
+        #hs-feedback-ui.hs-feedback-csat:not(.hs-feedback-top):not(.hs-feedback-expanded) {
+            width: 450px;
+        }
+    }
+
+    #hs-feedback-ui.hs-feedback-csat.hs-feedback-extended-width:not(.hs-feedback-top) {
+        width: 550px !important;
+    }
+
+    #hs-feedback-ui.preview.hs-feedback-csat.hs-feedback-callout:not(.hs-feedback-expanded):not(.hs-feedback-top) {
+        width: 450px !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        #hs-feedback-ui:not(.preview):not(.hs-feedback-callout):not(.hs-feedback-top),
+        #hs-feedback-ui.hs-feedback-expanded:not(.preview):not(.hs-feedback-top) {
+            width: 100% !important;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        #hs-feedback-ui.preview:not(.hs-feedback-top),
+        #hs-feedback-ui.hs-feedback-expanded.preview:not(.hs-feedback-top) {
+            width: 100% !important;
+        }
+    }
+
+    #hs-feedback-ui.hs-feedback-shown~#tally-widget-container,
+    #hs-feedback-ui.hs-feedback-shown~#wootric-modal {
+        display: none !important;
+    }
+
+    /* hide all popups in the same position as us */
+    @media only screen and (min-width: 544px) {
+
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown~#hubspot-messages-iframe-container,
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown~.leadinModal-theme-bottom-right-corner,
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown~.leadinModal-theme-bottom-left-corner,
+        #hs-feedback-ui.hs-feedback-top.hs-feedback-shown~.leadinModal-theme-top {
+            display: none !important;
+        }
+    }
+
+    /* hide leadflows when we're tablet-stretched across from them */
+    @media only screen and (min-width: 544px) and (max-width: 970px) {
+
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown~.leadinModal-theme-bottom-right-corner,
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown~.leadinModal-theme-bottom-left-corner {
+            display: none !important;
+        }
+    }
+
+    /* hide messages when we're tablet-stretched across from them */
+    @media only screen and (max-width: 966px) {
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown~#hubspot-messages-iframe-container {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (max-width: 544px) {
+
+        /* repeat above rules for small screens when we're set to display on mobile */
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile)~#hubspot-messages-iframe-container,
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)~#hubspot-messages-iframe-container,
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile)~.leadinModal-theme-bottom-right-corner,
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)~.leadinModal-theme-bottom-left-corner,
+        #hs-feedback-ui.hs-feedback-top.hs-feedback-shown:not(.hs-feedback-no-mobile)~.leadinModal-theme-top,
+        #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)~.leadinModal-theme-bottom-right-corner,
+        #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile)~.leadinModal-theme-bottom-left-corner {
+            display: none !important;
+        }
+
+        /* don't display us on small screens if we're set to not display on mobile */
+        #hs-feedback-ui.hs-feedback-no-mobile {
+            display: none;
+        }
+    }
+
+    i {
+        text-align: left;
+    }
+    html.hs-messages-widget-open.hs-messages-mobile,
+    html.hs-messages-widget-open.hs-messages-mobile body {
+        overflow: hidden !important;
+        position: relative !important
+    }
+
+    html.hs-messages-widget-open.hs-messages-mobile body {
+        height: 100% !important;
+        margin: 0 !important
+    }
+
+    #hubspot-messages-iframe-container {
+        display: initial !important;
+        z-index: 2147483647;
+        position: fixed !important;
+        bottom: 0 !important
+    }
+
+    #hubspot-messages-iframe-container.widget-align-left {
+        left: 0 !important
+    }
+
+    #hubspot-messages-iframe-container.widget-align-right {
+        right: 0 !important
+    }
+
+    #hubspot-messages-iframe-container.internal {
+        z-index: 1016
+    }
+
+    #hubspot-messages-iframe-container.internal iframe {
+        min-width: 108px
+    }
+
+    #hubspot-messages-iframe-container .shadow-container {
+        display: initial !important;
+        z-index: -1;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        content: ""
+    }
+
+    #hubspot-messages-iframe-container .shadow-container.internal {
+        display: none !important
+    }
+
+    #hubspot-messages-iframe-container .shadow-container.active {
+        width: 400px;
+        height: 400px
+    }
+
+    #hubspot-messages-iframe-container iframe {
+        display: initial !important;
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        background: transparent !important
+    }

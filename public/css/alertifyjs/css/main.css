@@ -1,0 +1,21 @@
+.is-preload #wrapper #header h1 {
+	text-align: center;
+}
+.is-preload #wrapper #header p {
+	text-align: center;
+}
+.is-preload #wrapper #header nav ul h3 {
+	text-align: center;
+}
+.is-preload #wrapper #footer .copyright {
+	text-align: center;
+}
+.is-preload #wrapper #footer span {
+	text-align: center;
+}
+.is-preload #wrapper span {
+	text-align: center;
+}
+a {
+	font-weight: bold;
+}

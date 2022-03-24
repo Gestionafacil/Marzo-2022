@@ -1,0 +1,75 @@
+.card-list-config .link {
+    display: block;
+    font-size: 15px;
+}
+
+#covid-bar {
+    color: #5b8f86 !important;
+    background-color: #b1e7d1 !important;
+    padding: 5px 0 5px 35px;
+    ;
+}
+
+.select-image img {
+    /* width: 171px;
+    height: 51px; */
+    width: 342px;
+    height: 102px;
+    border: dashed 2px #999
+}
+
+.card-planes {
+    font-size: 13px;
+    display: block;
+    padding: 5px 0;
+}
+
+label,
+p,
+.dropdown-item,
+.nav-item,
+input,
+td,
+th,
+.pagination {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-weight: normal !important;
+}
+
+th {
+    font-weight: bold !important;
+}
+
+.nombre_persona_asociada {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    font-weight: normal !important;
+    list-style: none;
+}
+
+
+/* Persona asociada */
+
+
+/* Círculos */
+
+.circle-letra {
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    /* margin-right: 15px; */
+    text-align: center;
+    width: 33px;
+    font-size: 20px;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+    /* You may want to include this as bootstrap applies these styles too */
+}
